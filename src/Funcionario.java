@@ -3,7 +3,7 @@ public class Funcionario extends Pessoa {
     private Double salario;
     private String turno;
 
-    public Funcionario(String nome, String cpf,String turno){
+    public Funcionario(String s, String nome, Double salario, String cpf, String turno){
         super(nome, cpf);
     }
 

@@ -10,8 +10,8 @@ public class QuartosGerenciador implements Interface {
 
     public QuartosGerenciador(){
     }
-    public void cadastrarQuarto(){
-        Quartos quarto = new Quartos("Solteiro", 1, 23456,5000.0,8/12/23);
+    public void cadastrarQuarto(Quartos quarto){
+        quartos.add(quarto);
         this.quartos.add(quarto);
         System.out.println("Quarto de código:" + quarto.getCodigo() + "registrado com sucesso!");
     }

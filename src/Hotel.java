@@ -8,8 +8,8 @@ public class Hotel {
 
     public Hotel(){
     }
-    public void cadastrarQuarto(){
-    this.gerenciador.cadastrarQuarto();
+    public void cadastrarQuarto(Quartos quarto){
+    this.gerenciador.cadastrarQuarto(quarto);
     }
     public void visualizarQuartos(){
     this.gerenciador.visualizarQuartos();
@@ -21,11 +21,20 @@ public class Hotel {
     this.clienteGerenciador.visualizarCliente();
     }
 
-    public void cadastrarFuncionario(){
-        this.funcionarioGerenciador.cadastrarFuncionario();
+    public void cadastrarFuncionario(Funcionario funcionario){
+        this.funcionarioGerenciador.cadastrarFuncionario(funcionario);
     }
     public void visualizarFuncionario(){
     this.funcionarioGerenciador.visualizarFuncionarios();
+    }
+    public void excluirQuarto(int codigo){
+        this.excluirQuarto(codigo);
+    }
+    public void excluirFuncionario(String nomeFuncionario){
+        this.excluirFuncionario(nomeFuncionario);
+    }
+    public void editarFuncionario(String nomeEditar){
+        this.editarFuncionario(nomeEditar);
     }
 
 public void reservarQuarto(int codigo){
